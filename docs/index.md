@@ -3,22 +3,28 @@
 layout: home
 
 hero:
-  name: "Front-end engineer"
+  name: "languages"
   text: ""
-  tagline: master these programming languages now.
+  tagline: Click on the links below.
   actions:
-    - theme: brand
-      text: < / >
-      link: /overview
+    # - theme: brand
+    #   text: Enter
+    #   link: /upl/javascript/
     # - theme: alt
-    #   text: API Examples
-    #   link: /api-examples
+    #   text: DSL
+    #   link: /dsl/
+    # - theme: alt
+    #   text: Protocal
+    #   link: /protocal/
 
 features:
   - title: UPL 通用编程语言
     details: Universal programming language
+    link: /upl/
   - title: DSL 领域专用语言
     details: Domain-specific language
-  - title: Proto 协议
+    link: /dsl/
+  - title: Protocal 协议
     details: Protocol language
+    link: /protocal/
 ---
