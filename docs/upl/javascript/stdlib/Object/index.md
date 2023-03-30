@@ -6,7 +6,7 @@
 引入依赖
 
 ```js
-import { 
+import {
   // 对象
   create,setObject,getObject,  // 自身
   isObject // 判断状态
@@ -15,7 +15,7 @@ import {
   setPrototype,getPrototype // 原型
   getPrototypeProperty, // 原型链上的所有属性
   isProperty // 判断状态
- } from "library/object";
+ } from "javascript.standard.library/object";
 ```
 
 注：列表的父项表示封装后的接口，子项表示被封装的接口或实现细节。

@@ -6,6 +6,23 @@ export default defineConfig({
   title: "languages",
   description: "Let's learn these programming language.",
   base: "/languages/",
+  footer: {
+    message: "Released under the MIT License.",
+    copyright: "Copyright © 2023-present imafee",
+  },
+  head: [
+    [
+      "script",
+      {},
+      `var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3e4d7bac52542136df96a8e4617fdcc9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();`,
+    ],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
