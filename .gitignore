@@ -1,8 +1,9 @@
-# 
-**/.vitepress/dist
-**/.vitepress/cache
+# files 
 .DS_Store
 .history
+
+# folders
+**/.vitepress/cache
 
 # Logs
 logs
@@ -108,3 +109,4 @@ dist
 
 # TernJS port file
 .tern-port
+
