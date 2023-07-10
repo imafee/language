@@ -1,40 +1,32 @@
 import { defineConfig } from "vitepress";
-import jsSidebarConfig from "./config/sidebar/javascript";
+import baidu from "./config/head.baidu";
+import jsConfig from "./config/sidebar/javascript";
+import jsObjects from "./config/sidebar/jsObjects";
 
-// https://vitepress.dev/reference/site-config
+// 参考 https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "languages",
-  description: "Let's learn these programming language.",
-  base: "/languages/",
+  title: "《Language》",
+  description: "Let's learn programming language in the world!",
+  base: "/language/",
   footer: {
     message: "Released under the MIT License.",
-    copyright: "Copyright © 2023-present imafee",
+    copyright: "Copyright © 2023-present imafee@163.com",
   },
-  head: [
-    [
-      "script",
-      {},
-      `var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?3e4d7bac52542136df96a8e4617fdcc9";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();`,
-    ],
-  ],
+  head: [["script", {}, baidu]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Home", link: "/" },
-      // { text: "Examples", link: "/markdown-examples" },
+      { text: "UPL", link: "/upl/" },
+      { text: "DSL", link: "/dsl/" },
+      { text: "PROTOCOL", link: "/proto/" },
     ],
     sidebar: {
       "/upl/": [
-        jsSidebarConfig,
+        jsConfig,
+        jsObjects,
         { text: "TypeScript", items: [] },
         { text: "WebAssembly", items: [] },
-        { text: "CLang", items: [] },
+        { text: "Clang", items: [] },
         { text: "Rust", items: [] },
       ],
       "/dsl/": [
@@ -106,9 +98,8 @@ export default defineConfig({
           text: "bnf",
           items: [],
         },
-        { text: "prompt", items: [] },
       ],
-      "/proto/": [
+      "/protocol/": [
         { text: "TCP", items: [] },
         { text: "UDP", items: [] },
         { text: "HTTP", items: [] },

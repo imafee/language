@@ -1,12 +1,15 @@
-# languages
+# language
 
 learn lot of useful languages.
+
+- 语言规范
+- 语言实现
 
 ## reading online
 
 reading document and demos online
 
-[website](https://github.com/imafee/languages)
+[website](https://github.com/imafee/language)
 
 ## operating locally
 

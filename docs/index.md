@@ -3,19 +3,19 @@
 layout: home
 
 hero:
-  name: "languages"
+  name: ""
   text: ""
-  tagline: Click on the links below.
-  actions:
-    # - theme: brand
-    #   text: Enter
-    #   link: /upl/javascript/
-    # - theme: alt
-    #   text: DSL
-    #   link: /dsl/
-    # - theme: alt
-    #   text: Protocal
-    #   link: /protocal/
+  tagline: as follow
+  # actions:
+  #   - theme: brand
+  #     text: Enter
+  #     link: /upl/javascript/
+  #   - theme: alt
+  #     text: DSL
+  #     link: /dsl/
+  #   - theme: alt
+  #     text: Protocal
+  #     link: /protocal/
 
 features:
   - title: UPL 通用编程语言
