@@ -27,4 +27,13 @@ features:
   - title: Protocal 协议
     details: Protocol language
     link: /protocal/
+  - title: Library 标准类库
+    details: Standard library
+    link: /lib/
+  - title: Compile 编译
+    details: 语法转换
+    link: /
+  - title: Bundle 打包
+    details: 特定平台的打包产物
+    link: /
 ---

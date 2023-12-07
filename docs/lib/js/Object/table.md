@@ -25,5 +25,5 @@ ecma| api | describe | note
 验证
 
 ::: code-group
-<<< @/../demos/javascript/buildinObjects/Object/static/freeze.js [frozen]
+<<< @/../demos/lib/js/Object/static/freeze.js [frozen]
 :::

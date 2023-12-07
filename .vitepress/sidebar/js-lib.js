@@ -1,9 +1,9 @@
 export default {
-  text: "JS build-in objects",
+  text: "JS Object",
   collapsed: false,
   items: [
     {
-      text: "(Value-Properties)",
+      text: "Value-Property",
       collapsed: true,
       items: [
         { text: "globalThis" },
@@ -13,7 +13,7 @@ export default {
       ],
     },
     {
-      text: "(Function-Properties)",
+      text: "Function-Property",
       collapsed: true,
       items: [
         { text: "eval" },
@@ -28,7 +28,7 @@ export default {
       ],
     },
     {
-      text: "(Primitive-Types)",
+      text: "Primitive-Types",
       collapsed: true,
       items: [
         { text: "Undefined" },
@@ -42,12 +42,12 @@ export default {
     },
 
     {
-      text: "(Keyed-Collections)",
+      text: "Keyed-Collections",
       collapsed: false,
       items: [
         {
           text: "Object",
-          link: "upl/jsObjects/Object/index.md",
+          link: "/lib/js/Object/index.md",
         },
         { text: "Map" },
         { text: "WeakMap" },
@@ -56,26 +56,13 @@ export default {
       ],
     },
     {
-      text: "(Indexed-Collections)",
+      text: "Indexed-Collections",
       collapsed: true,
       items: [
         {
           text: "Array",
           collapsed: true,
-          items: [
-            {
-              text: "instance",
-              link: "upl/jsObjects/Array/inst.md",
-            },
-            {
-              text: "static property",
-              link: "upl/jsObjects/Array/static.md",
-            },
-            {
-              text: "prototype property",
-              link: "upl/jsObjects/Array/proto.md",
-            },
-          ],
+          items: [],
         },
         { text: "Int*Array" },
         { text: "Unit*Array" },
@@ -84,12 +71,12 @@ export default {
       ],
     },
     {
-      text: "(Reflection)",
+      text: "Reflection",
       collapsed: true,
       items: [{ text: "Function" }, { text: "Reflect" }, { text: "Proxy" }],
     },
     {
-      text: "(Misc.)",
+      text: "Misc.",
       collapsed: true,
       items: [
         { text: "Date" },
@@ -114,7 +101,7 @@ export default {
       ],
     },
     {
-      text: "(Abstraction-Control)",
+      text: "Abstraction-Control",
       collapsed: true,
       items: [
         { text: "Iterator" },
@@ -130,7 +117,7 @@ export default {
       ],
     },
     {
-      text: "(Structured-Data)",
+      text: "Structured-Data",
       collapsed: true,
       items: [
         { text: "ArrayBuffer" },
@@ -141,7 +128,7 @@ export default {
       ],
     },
     {
-      text: "(Manage-Memory)",
+      text: "Manage-Memory",
       collapsed: true,
       items: [
         { text: "WeakRef", collapsed: true },

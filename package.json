@@ -1,19 +1,34 @@
 {
   "name": "language",
-  "version": "0.0.1",
-  "description": "learn these common programming languages.",
-  "keywords": [],
-  "author": "imafee",
-  "license": "GNU",
+  "version": "0.0.0",
+  "description": "language features",
+  "homepage": "https://imafee.github.io/language",
+  "bugs": {
+    "url": "https://github.com/imafee/language/issues",
+    "email": "imafee@outlook.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "imafee",
+    "email": "imafee@outlook.com",
+    "url": "https://imafee.github.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:imafee/language.git"
+  },
+  "config": {
+    "repo-url": "//github.com/imafee/language"
+  },
+  "private": true,
+  "type": "module",
   "scripts": {
-    "ver": "vitepress -v",
-    "docs:dev": "npx vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "demo": "http-server demos"
   },
   "devDependencies": {
-    "http-server": "^14.1.1",
-    "vitepress": "^1.0.0-beta.2"
-  },
-  "type": "module"
+    "vitepress": "^1.0.0-rc.31"
+  }
 }
