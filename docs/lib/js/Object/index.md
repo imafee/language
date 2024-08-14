@@ -2,51 +2,56 @@
 # aside: false
 ---
 
-# Object
+# Object 对象类型
 
-由于本节的特殊性，以常规的静态属性(方法)、原型属性(方法)、实例属性(方法)的顺序没法说清楚，因此打散后串讲。
+对象类型 是 js 语言堆内存中的唯一类型，有别于栈内存中基本类型的讲述方式（静态属性和方法、原型属性和方法、实例属性和方法），此处打散后串讲会更加清晰。
 
-对象实例的 4 种状态对应的读写权限：(实质就是一张属性表的权限操作)
-
-| status         | 增加字段 | 删除字段 | 修改字段 | 值的改动 | 备注         |
-| -------------- | -------- | -------- | -------- | -------- | ------------ |
-| default        | yes      | yes      | yes      | yes      | 默认状态     |
-| non-extensible | no       | yes      | yes      | yes      | 不可扩展状态 |
-| sealed         | no       | no       | no       | yes      | 封存态       |
-| frozen         | no       | no       | no       | no       | 冻结态       |
-
-状态只能从上往下变化，不能从下而上变化！
-
-[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-
-## 实例化
+## 实例的创建
 
 ```js
 Object.prototype.constructor(any); // any表示任何类型的数值，构造出对应类型的对象实例
-let object = {}; // 字面量
+Object(any); // window.Object === Object.prototype.constructor,返回包装对象
+new Object(any); // 同上
+let object = {...}; // 字面量
 ```
 
 ::: details
-
-- 实例的内部原型链属性(\_\_proto\_\_)，指向该实例的类型对象的原型对象(Object.prototype)
 
 ::: code-group
 <<< @/../demos/lib/js/Object/proto/constructor.js [constructor]
 <<< @/../demos/lib/js/Object/instance.js [instance]
 :::
 
-## 实例的状态操作(增删改)
+## 实例的状态
 
+所谓实例的状态即属性表的操作权限。
+状态只能从上往下的顺序变化！
+
+<!-- prettier-ignore -->
+| status | 状态 | 增加字段 | 删除字段 | 修改字段 | 修改值 | 备注 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| extensible | 可扩展状态 | **yes** | **yes** | **yes** | **yes** | 字面量声明时的实例的默认状态<br/> ` [[Extensible]] === true` `descriptor.configurable === true ` `descriptor.writable === true` |
+| non-extensible | 不可扩展状态 | no | **yes** | **yes** | **yes** | `[[Extensible]] === false` `descriptor.configurable === true` `descriptor.writable === true` |
+| sealed | 封存态 | no | no | no | **yes** | `[[Extensible]] === false` `descriptor.configurable === false` `descriptor.writable === true` |
+| frozen | 冻结态 | no | no | no | no | `[[Extensible]] === false` `descriptor.configurable === false` `descriptor.writable === false` |
+
+修改实例的状态
+
+<!-- @include: ../emoji.md -->
 <!--@include: ./table.md -->
 
-## 实例的属性描述符操作
+## 属性的状态
+
+定义实例属性的内容和状态，使用 属性描述符相关方法
 
 <!--@include: ./record.md -->
 
-## 实例的常规操作
+## 其他方法
 
 <!--@include: ./prop.md -->
 
 ## Reference
 
-[相关的数据结构](/lib/js/data-structure.md)
+[MDN-object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+[常见数据结构](/lib/js/data-structure.md)

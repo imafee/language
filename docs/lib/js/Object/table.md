@@ -1,12 +1,12 @@
 <!-- prettier-ignore -->
-ecma| api | describe | note
+ecma| api | describe | notes
 --- | :--- | :--- | :---
-5| Object.**preventExtensions**(obj) :boom: | 阻止扩展，表不能再添加属性 | `不可扩展态`
-5| Object.**seal**(obj) :boom: | 被封存，表记录不能删除和重新定义 | `封存态`
-5| Object.**freeze**(obj) :boom: | 被冻结，表字段禁止写入 | `冻结态` 
-5| Object.**isExtensible**(obj) | 查询表的状态,是不是`不可扩展态`。<br>判断条件：实例内部属性`[[Extensible]]===false` | 表状态与属性状态无关，是2个概念
-5| Object.**isSealed**(obj) | 查询表的状态，是不是`封存态`。<br>判断条件：不可扩展态 && 所有记录（属性）的`configurable===false` | 从判断条件看，与属性表状态和属性状态有关 
-5| Object.**isFrozen**(obj) | 查询表的状态，是不是`冻结态`。<br>判断条件：不可扩展态 && 封存态 && 所有记录（属性）的`writable===false` | 从判断条件看，与属性表状态和属性状态有关
+5| Object.**preventExtensions**(obj) :boom: | 阻止扩展，即属性表不能再添加属性 | 变为`不可扩展态`
+5| Object.**seal**(obj) :boom: | 被封存，表记录不能删除和重新定义 | 变为`封存态`
+5| Object.**freeze**(obj) :boom: | 被冻结，表字段禁止写入 | 变为`冻结态` 
+5| Object.**isExtensible**(obj) | 是不是`不可扩展态`| 查询属性表的状态<br/>注意,属性表状态和属性状态是两个概念
+5| Object.**isSealed**(obj) | 是不是`封存态`| 查询属性表的状态
+5| Object.**isFrozen**(obj) | 是不是`冻结态`|查询属性表的状态
 
 ::: details
 

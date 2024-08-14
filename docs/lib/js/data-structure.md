@@ -1,8 +1,8 @@
 # webapi 中常见数据结构
 
-## Descriptor 属性描述符(或者叫做属性对象 propertyObject)
+## Descriptor
 
-用来描述对象的属性。
+属性描述符(或者叫做属性对象 propertyObject)，用来描述对象的属性。
 
 - 当对象以字面量定义时，属性的这 4 个默认值全为 true
 - 当对象以属性描述符定义时，属性的（未定义值）默认值都是 false
@@ -23,7 +23,9 @@
 }
 ```
 
-## Descriptors 属性描述符集
+## Descriptors
+
+属性描述符集
 
 ```jsonc
 {

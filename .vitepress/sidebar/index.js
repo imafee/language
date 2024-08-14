@@ -12,6 +12,10 @@ export default {
 
   "/dsl/": [
     {
+      text: "bnf",
+      items: [],
+    },
+    {
       text: "uml",
       items: [],
     },
@@ -56,10 +60,6 @@ export default {
       items: [],
     },
     {
-      text: "sql",
-      items: [],
-    },
-    {
       text: "latex",
       items: [],
     },
@@ -75,8 +75,17 @@ export default {
       text: "drools",
       items: [],
     },
+
     {
-      text: "bnf",
+      text: "sql",
+      items: [],
+    },
+    {
+      text: "graphQl",
+      items: [],
+    },
+    {
+      text: "restful",
       items: [],
     },
   ],
