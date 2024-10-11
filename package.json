@@ -1,0 +1,43 @@
+{
+  "name": "lang-book",
+  "version": "0.0.0",
+  "description": "language features",
+  "homepage": "https://imafee.github.io/language",
+  "bugs": {
+    "url": "https://github.com/imafee/language/issues",
+    "email": "imafee@outlook.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "imafee",
+    "email": "imafee@outlook.com",
+    "url": "https://imafee.github.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:imafee/language.git"
+  },
+  "private": true,
+  "type": "module",
+  "config": {
+    "vitepress": {
+      "title": "Language Book",
+      "description": "A book about program language related.",
+      "repourl": "//github.com/imafee/language"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "demo": "http-server codes"
+  },
+  "devDependencies": {
+    "http-server": "^14.0.0",
+    "vitepress": "^1.0.0"
+  },
+  "dependencies": {
+    "vue": "^3.5.11"
+  }
+}
