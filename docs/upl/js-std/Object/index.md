@@ -9,11 +9,15 @@ Object.prototype.constructor(any); // 函数式的实例化方式，调用返回
 Object(any); // 同上。因为window.Object === Object.prototype.constructor
 ```
 
+::: details exercises
+::: code-group
+<<< @/../codes/js/std/Object/instance.test.js [instance]
+<<< @/../codes/js/std/Object/proto/constructor.test.js [constructor]
+:::
+
 ## 实例的状态
 
-即属性(表)的可操作权限。
-
-属性表权限一览
+所谓实例的状态，即属性表的可操作权限。
 
 <!-- prettier-ignore -->
 | 实例状态\属性表权限 | record add | record delete | field modify | value modify | 机制 |
@@ -45,6 +49,11 @@ ecma | api | 机制 | 状态
 
 <!-- @include: ../tip.md -->
 
+::: details exercises
+::: code-group
+<<< @/../codes/js/std/Object/static/freeze.test.js [freeze]
+:::
+
 ## 属性描述符(集)
 
 使用"属性描述符"数据结构，来创建实例(定义对象实例的属性)
@@ -60,6 +69,11 @@ ecma| api | describe |
 1|Object.prototype.propertyIsEnumerable(propName) [:musical_keyboard:]|属性可枚举(自身的)|
 
 <!-- @include: ../tip.md -->
+
+::: details exercises
+::: code-group
+<<< @/../codes/js/std/Object/static/defineProperty.test.js [defineProperty]
+:::
 
 ## 方法
 
@@ -79,8 +93,16 @@ ecma| api |describe |note |
 3|~~Object.prototype.hasOwnProperty(obj,propName)~~|自身属性中有没有该属性| 已废除。推荐`Object.hasOwn`
 2015|Object.**hasOwn**(obj,propName) [:musical_keyboard:, own] | 自身属性中有没有该属性 | 仅返回自身属性
 2015|Object.**is**(value1,value2) | 两个栈值是否相同 | 与===的区别：前者将0、-0视为相同，将NaN与NaN视为不相同
-1|Object.prototype.**toLocaleString**() | 对象的本地化字符串表示(待整理)| 参考[国际化](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
-1|Object.prototype.**toString**() | 对象类型的字符串表示(待整理) | Object.prototype.toString.call(any) // 返回'[object 类型]'
+1|Object.prototype.**toLocaleString**() | 对象的本地化字符串表示| 参考[国际化](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
+1|Object.prototype.**toString**() | 对象类型的字符串表示| Object.prototype.toString.call(any) // 返回'[object 类型]'
 1|Object.prototype.**valueOf**() | 将原始值转化为对应类型的对象 | Object.prototype.valueOf.call(1) // number object
 
 <!-- @include: ../tip.md -->
+
+::: details exercises
+::: code-group
+<<< @/../codes/js/std/Object/static/assign.test.js [assign]
+<<< @/../codes/js/std/Object/static/create.test.js [create]
+<<< @/../codes/js/std/Object/static/entries.test.js [entries]
+<<< @/../codes/js/std/Object/static/is.test.js [is]
+:::
