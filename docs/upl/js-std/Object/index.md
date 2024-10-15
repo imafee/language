@@ -3,10 +3,10 @@
 ## 实例的创建
 
 ```js
-let object = {...}; // 字面量
-new Object(any); // 面向对象的实例化方式。构造出any对应类型的对象实例，俗称包装对象
+let object = {}; // 字面量
+new Object(any); // 面向对象的实例化方式。构造出any对应类型的对象实例，俗称装包
 Object.prototype.constructor(any); // 函数式的实例化方式，调用返回。效果同上。
-Object(any); // 同上。因为window.Object === Object.prototype.constructor
+Object(any); // 同上。Object === Object.prototype.constructor
 ```
 
 ::: details exercises
@@ -17,7 +17,7 @@ Object(any); // 同上。因为window.Object === Object.prototype.constructor
 
 ## 实例的状态
 
-所谓实例的状态，即属性表的可操作权限。
+属性表的可操作权限,简称为实例的状态
 
 <!-- prettier-ignore -->
 | 实例状态\属性表权限 | record add | record delete | field modify | value modify | 机制 |
@@ -95,7 +95,7 @@ ecma| api |describe |note |
 2015|Object.**is**(value1,value2) | 两个栈值是否相同 | 与===的区别：前者将0、-0视为相同，将NaN与NaN视为不相同
 1|Object.prototype.**toLocaleString**() | 对象的本地化字符串表示| 参考[国际化](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
 1|Object.prototype.**toString**() | 对象类型的字符串表示| Object.prototype.toString.call(any) // 返回'[object 类型]'
-1|Object.prototype.**valueOf**() | 将原始值转化为对应类型的对象 | Object.prototype.valueOf.call(1) // number object
+1|Object.prototype.**valueOf**() | 将原始值转化为对应类型的对象/或者相反 | Object.prototype.valueOf.call(1) // number object
 
 <!-- @include: ../tip.md -->
 
