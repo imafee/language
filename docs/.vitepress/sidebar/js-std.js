@@ -48,7 +48,7 @@ export default [
         text: "Object",
         link: "/upl/js-std/Object/index.md",
       },
-      { text: "Map" },
+      { text: "Map", link: "/upl/js-std/Map/index.md" },
       { text: "WeakMap" },
       { text: "Set" },
       { text: "WeakSet" },
