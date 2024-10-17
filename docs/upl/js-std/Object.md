@@ -47,7 +47,7 @@ ecma | api | 机制 | 状态
 5| Object.isSealed(obj) | `if([[Extensible]] === false && descriptor.configurable === false`| 是否为封存态
 5| Object.isFrozen(obj) | `if([[Extensible]] === false && descriptor.configurable === false && descriptor.writable === false` | 是否为冻结态
 
-<!-- @include: ../tip.md -->
+<!-- @include: ./tip.md -->
 
 ::: details exercises
 ::: code-group
@@ -68,7 +68,7 @@ ecma| api | describe |
 5|Object.getOwnPropertyDescriptors(obj) [:musical_keyboard:,own]|查询对象的属性描述符集|
 1|Object.prototype.propertyIsEnumerable(propName) [:musical_keyboard:]|属性可枚举(自身的)|
 
-<!-- @include: ../tip.md -->
+<!-- @include: ./tip.md -->
 
 ::: details exercises
 ::: code-group
@@ -97,7 +97,7 @@ ecma| api |describe |note |
 1|Object.prototype.**toString**() | 对象类型的字符串表示| Object.prototype.toString.call(any) // 返回'[object 类型]'
 1|Object.prototype.**valueOf**() | 将原始值转化为对应类型的对象/或者相反 | Object.prototype.valueOf.call(1) // number object
 
-<!-- @include: ../tip.md -->
+<!-- @include: ./tip.md -->
 
 ::: details exercises
 ::: code-group
