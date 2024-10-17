@@ -1,13 +1,23 @@
-# language
+# language book
 
-Usage:
+## usage:
 
 ```shell
-npm i # install dependencies
-npm run docs:dev # edit document
-npm run docs:build # pack document
-npm run docs:preview # view document
-npn run test # test all js test
+git clone <thisrepo> # clone to your computer
+npm i # Install dependencies
+npm run docs:dev # Edit document
+npm run docs:build # Pack document
+npm run docs:preview # View document in dist folder
+npn run test # Execute all test files
 ```
 
-本项目采用 ESM 模块化方案，故采用实验性环境 `node --experimental-vm-modules node_modules/jest/bin/jest.js`，和 Commanjs 环境的`jest`执行结果相比会有很大差异。
+本项目使用 ESM 模块化方案和实验性的运行时环境
+
+```jsonc
+{
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  }
+}
+// 注意：Commanjs 和 EMS 两个环境下执行`jest`会有明显的差异。
+```

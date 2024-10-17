@@ -46,9 +46,9 @@ export default [
     items: [
       {
         text: "Object",
-        link: "/upl/js-std/Object/index.md",
+        link: "/upl/js-std/Object",
       },
-      { text: "Map", link: "/upl/js-std/Map/index.md" },
+      { text: "Map", link: "/upl/js-std/Map" },
       { text: "WeakMap" },
       { text: "Set" },
       { text: "WeakSet" },
@@ -60,13 +60,12 @@ export default [
     items: [
       {
         text: "Array",
-        collapsed: true,
-        items: [],
+        link: "/upl/js-std/Array",
       },
-      { text: "Int*Array" },
-      { text: "Unit*Array" },
-      { text: "BigInt*Array" },
-      { text: "Float*Array" },
+      {
+        text: "TypedArrays",
+        link: "/upl/js-std/TypedArrays",
+      },
     ],
   },
   {

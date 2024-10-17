@@ -24,6 +24,16 @@ export default defineConfig({
     ],
     ["script", {}, baidu],
   ],
+  markdown: {
+    // math: true,
+    image: {
+      lazyLoading: true,
+    },
+  },
+  // rewrites: {
+  //   "upl/js-std/Object.md": "upl/js-std/object.md",
+  //   "upl/js-std/Map.md": "upl/js-std/map.md",
+  // },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

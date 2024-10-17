@@ -21,7 +21,7 @@
   "type": "module",
   "config": {
     "vitepress": {
-      "title": "Language Book",
+      "title": "lang-book",
       "description": "A book about program language related.",
       "repourl": "//github.com/imafee/language"
     }
