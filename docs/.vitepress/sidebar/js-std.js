@@ -36,7 +36,7 @@ export default [
       { text: "Boolean" },
       { text: "Number" },
       { text: "BigInt" },
-      { text: "String" },
+      { text: "String", link: "/upl/js-std/String" },
       { text: "Symbol" },
     ],
   },
