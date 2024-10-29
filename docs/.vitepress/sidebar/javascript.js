@@ -5,113 +5,104 @@ export default {
   collapsed: false,
   items: [
     {
-      text: "Grammer 语法",
+      text: "Grammer",
       collapsed: true,
       items: [
-        { text: "overview 概况", link: "/upl/js/grammer/overview" },
+        { text: "overview", link: "/upl/js/grammer/index" },
+        {
+          text: "declaration",
+          link: "/upl/js/grammer/declaration",
+        },
+        {
+          text: "expression",
+          link: "/upl/js/grammer/expression",
+        },
+        {
+          text: "statement",
+          link: "/upl/js/grammer/statement",
+        },
+        { text: "module", link: "/upl/js/grammer/module" },
+        { text: "strict", link: "/upl/js/grammer/strict" },
+      ],
+    },
+    {
+      text: "Structure",
+      collapsed: true,
+      items: [
+        { text: "overview", link: "upl/js/structure/overview/" },
+        {
+          text: "basicElm 基本组织元素",
+          link: "upl/js/structure/basicElm/",
+        },
         {
           text: "declaration 声明",
-          link: "/upl/js/grammer/declaration/",
+          link: "upl/js/structure/declaration/",
         },
         {
-          text: "expression 表达式",
-          link: "/upl/js/grammer/expression/",
+          text: "codeBlock 语句和代码分块",
+          link: "upl/js/structure/codeBlocking/",
         },
         {
-          text: "statement 语句",
-          link: "/upl/js/grammer/statement/",
+          text: "organizeBlock 组织形式分块的方法",
+          link: "upl/js/structure/organizeBlock/",
         },
-        { text: "module 模块", link: "/upl/js/grammer/module/" },
-        { text: "strict 严格模式", link: "/upl/js/grammer/strict/" },
         {
-          text: "operator 运算符",
-          link: "/upl/js/grammer/operator/",
+          text: "programStructure 层次结构程序设计",
+          link: "upl/js/structure/programStructure/",
+        },
+        {
+          text: "variableScope 变量作用域",
+          link: "upl/js/structure/variableScope/",
+        },
+        {
+          text: "privateProps 私有属性和字段",
+          link: "upl/js/structure/privateProps/",
         },
       ],
     },
     {
-      text: "Feature 特性",
+      text: "Dynamic",
       collapsed: true,
       items: [
+        { text: "overview", link: "upl/js/dynamic/overview" },
         {
-          text: "Structure 组织",
-          collapsed: true,
-          items: [
-            { text: "overview", link: "upl/js/structure/overview/" },
-            {
-              text: "basicElm 基本组织元素",
-              link: "upl/js/structure/basicElm/",
-            },
-            {
-              text: "declaration 声明",
-              link: "upl/js/structure/declaration/",
-            },
-            {
-              text: "codeBlock 语句和代码分块",
-              link: "upl/js/structure/codeBlocking/",
-            },
-            {
-              text: "organizeBlock 组织形式分块的方法",
-              link: "upl/js/structure/organizeBlock/",
-            },
-            {
-              text: "programStructure 层次结构程序设计",
-              link: "upl/js/structure/programStructure/",
-            },
-            {
-              text: "variableScope 变量作用域",
-              link: "upl/js/structure/variableScope/",
-            },
-            {
-              text: "privateProps 私有属性和字段",
-              link: "upl/js/structure/privateProps/",
-            },
-          ],
+          text: "转换为值类型",
+          link: "upl/js/dynamic/typeConvertToPrimitive",
         },
         {
-          text: "Dynamic 动态",
-          collapsed: true,
-          items: [
-            { text: "overview", link: "upl/js/dynamic/overview" },
-            {
-              text: "转换为值类型",
-              link: "upl/js/dynamic/typeConvertToPrimitive",
-            },
-            {
-              text: "值类型之间转换",
-              link: "upl/js/dynamic/typeConvertBetweenPrimitive",
-            },
-            {
-              text: "对象和数组",
-              link: "upl/js/dynamic/objectAndArray",
-            },
-            { text: "重写", link: "upl/js/dynamic/overWrite" },
-            { text: "执行", link: "upl/js/dynamic/eval" },
-            { text: "调用", link: "upl/js/dynamic/invoke" },
-            { text: "通用执行环境", link: "upl/js/dynamic/execEnv" },
-          ],
+          text: "值类型之间转换",
+          link: "upl/js/dynamic/typeConvertBetweenPrimitive",
         },
         {
-          text: "Parallel 并行计算",
-          collapsed: true,
-          items: [
-            { text: "overview 概况", link: "upl/js/parallel/overview" },
-            { text: "promise 许诺", link: "upl/js/parallel/promise" },
-            {
-              text: "与其他语言特性的交集",
-              link: "upl/js/parallel/xxxxxxx",
-            },
-            { text: "concurrency 并发", link: "upl/js/parallel/concurrency" },
-            {
-              text: "分布式网络环境并行",
-              link: "upl/js/parallel/distributedNet",
-            },
-          ],
+          text: "对象和数组",
+          link: "upl/js/dynamic/objectAndArray",
         },
+        { text: "重写", link: "upl/js/dynamic/overWrite" },
+        { text: "执行", link: "upl/js/dynamic/eval" },
+        { text: "调用", link: "upl/js/dynamic/invoke" },
+        { text: "通用执行环境", link: "upl/js/dynamic/execEnv" },
       ],
     },
     {
-      text: "Paradigm 多范式",
+      text: "Parallel",
+      collapsed: true,
+      items: [
+        { text: "overview 概况", link: "upl/js/parallel/overview" },
+        { text: "promise 许诺", link: "upl/js/parallel/promise" },
+        {
+          text: "与其他语言特性的交集",
+          link: "upl/js/parallel/xxxxxxx",
+        },
+        { text: "concurrency 并发", link: "upl/js/parallel/concurrency" },
+        {
+          text: "分布式网络环境并行",
+          link: "upl/js/parallel/distributedNet",
+        },
+      ],
+    },
+
+    {
+      text: "Paradigm",
       collapsed: true,
       items: [
         {
@@ -194,8 +185,8 @@ export default {
       ],
     },
     {
-      text: "Build-in Objects 内置对象",
-      collapsed: false,
+      text: "Build-in Objects",
+      collapsed: true,
       items: jsstd,
     },
   ],

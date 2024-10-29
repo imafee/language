@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 import sidebar from "./sidebar/index.js";
-import baidu from "./head.baidu.js";
+// import baidu from "./head.baidu.js";
 import pkg from "../../package.json";
 
 const { license, author, config } = pkg;
@@ -22,7 +22,7 @@ export default defineConfig({
         href: "./assets/favicon-16x16.png",
       },
     ],
-    ["script", {}, baidu],
+    //   ["script", {}, baidu],
   ],
   markdown: {
     // math: true,
@@ -36,22 +36,23 @@ export default defineConfig({
   // },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    editLink: {
+      pattern: `${repourl}/edit/main/:path`,
+      text: `Edit this page`,
+    },
+    footer: {
+      message: `Released under the ${license} License.`,
+      copyright: `Copyright © 2020-${new Date().getFullYear()}-${author.name}`,
+    },
+    lastUpdated: false,
     nav: [
       { text: "UPL", link: "/upl/" },
       { text: "DSL", link: "/dsl/" },
       { text: "Protocol", link: "/protocol/" },
     ],
+    outline: "deep",
     sidebar,
     socialLinks: [{ icon: "github", link: repourl }],
-    footer: {
-      message: `Released under the ${license} License.`,
-      copyright: `Copyright © 2020-${new Date().getFullYear()}-${author.name}`,
-    },
-    editLink: {
-      pattern: `${repourl}/edit/main/:path`,
-      text: `Edit this page on ${repourl}`,
-    },
-    lastUpdated: false,
     search: {
       provider: "local",
     },
