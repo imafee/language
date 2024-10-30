@@ -2,6 +2,7 @@ import jsstd from "./js-std.js";
 
 export default {
   text: "JavaScript",
+  link: "/upl/js",
   collapsed: false,
   items: [
     {
@@ -29,34 +30,34 @@ export default {
       text: "Structure",
       collapsed: true,
       items: [
-        { text: "overview", link: "upl/js/structure/overview/" },
+        { text: "overview", link: "upl/js/structure" },
         {
-          text: "basicElm 基本组织元素",
-          link: "upl/js/structure/basicElm/",
+          text: "element",
+          link: "upl/js/structure/element",
         },
         {
-          text: "declaration 声明",
-          link: "upl/js/structure/declaration/",
+          text: "declaration",
+          link: "upl/js/structure/declaration",
         },
         {
-          text: "codeBlock 语句和代码分块",
-          link: "upl/js/structure/codeBlocking/",
+          text: "segmentation",
+          link: "upl/js/structure/segmentation",
         },
         {
-          text: "organizeBlock 组织形式分块的方法",
-          link: "upl/js/structure/organizeBlock/",
+          text: "organization",
+          link: "upl/js/structure/organization",
         },
         {
-          text: "programStructure 层次结构程序设计",
-          link: "upl/js/structure/programStructure/",
+          text: "programming                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+          link: "upl/js/structure/programming",
         },
         {
-          text: "variableScope 变量作用域",
-          link: "upl/js/structure/variableScope/",
+          text: "scope",
+          link: "upl/js/structure/scope",
         },
         {
-          text: "privateProps 私有属性和字段",
-          link: "upl/js/structure/privateProps/",
+          text: "private",
+          link: "upl/js/structure/private",
         },
       ],
     },
