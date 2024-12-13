@@ -1,6 +1,10 @@
 # typed arrays
 
-[参考](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Typed_arrays)
+参考
+
+- https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Typed_arrays
+- https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
+- https://web.dev/articles/webgl-typed-arrays?hl=zh-cn
 
 ## 概念
 

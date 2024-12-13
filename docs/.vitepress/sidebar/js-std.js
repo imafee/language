@@ -42,7 +42,7 @@ export default [
   },
   {
     text: "Keyed-Collections(键值集合)",
-    collapsed: false,
+    collapsed: true,
     items: [
       {
         text: "Object",

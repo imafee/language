@@ -33,31 +33,31 @@ export default {
         { text: "overview", link: "upl/js/structure" },
         {
           text: "element",
-          link: "upl/js/structure/element",
+          // link: "upl/js/structure/element",
         },
         {
           text: "declaration",
-          link: "upl/js/structure/declaration",
+          // link: "upl/js/structure/declaration",
         },
         {
           text: "segmentation",
-          link: "upl/js/structure/segmentation",
+          // link: "upl/js/structure/segmentation",
         },
         {
           text: "organization",
-          link: "upl/js/structure/organization",
+          // link: "upl/js/structure/organization",
         },
         {
           text: "programming                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
-          link: "upl/js/structure/programming",
+          // link: "upl/js/structure/programming",
         },
         {
           text: "scope",
-          link: "upl/js/structure/scope",
+          // link: "upl/js/structure/scope",
         },
         {
           text: "private",
-          link: "upl/js/structure/private",
+          // link: "upl/js/structure/private",
         },
       ],
     },
@@ -107,28 +107,28 @@ export default {
       collapsed: true,
       items: [
         {
-          text: "Functional 函数式",
+          text: "Functional",
           collapsed: true,
           items: [
             {
-              text: "overview 概况",
-              link: "upl/js/functional/overview/",
+              text: "overview",
+              link: "/upl/js/paradigm/fp",
             },
             {
-              text: "从运算式语言到函数式语言",
-              link: "upl/js/functional/arithmeticToFunctional/",
+              text: "operational",
+              link: "/upl/js/paradigm/fp/operational",
             },
             {
-              text: "function 函数",
-              link: "upl/js/functional/function/",
+              text: "function",
+              link: "/upl/js/paradigm/fp/function",
             },
             {
-              text: "functionBehavior 函数行为",
-              link: "upl/js/functional/functionBehavior/",
+              text: "函数行为",
+              link: "/upl/js/paradigm/fp/behavior",
             },
             {
-              text: "closure 闭包",
-              link: "upl/js/functional/closure/",
+              text: "closure",
+              link: "/upl/js/paradigm/fp/closure",
             },
           ],
         },
@@ -186,7 +186,7 @@ export default {
       ],
     },
     {
-      text: "Build-in Objects",
+      text: "Global Objects",
       collapsed: true,
       items: jsstd,
     },
